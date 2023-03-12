@@ -64,5 +64,14 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm-commons:9.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.ow2.asm:asm-tree:9.4" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.26" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: com.boydti:fawe:2.5.3">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/FastAsyncWorldEdit-2.5.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
