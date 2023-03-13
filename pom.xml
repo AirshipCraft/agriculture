@@ -97,6 +97,7 @@
             <scope>system</scope>
             <systemPath>${basedir}/lib/FastAsyncWorldEdit-2.5.3.jar</systemPath>
         </dependency>
+        <!--will eventually change this import to the AC fork-->
         <dependency>
             <groupId>me.lucko</groupId>
             <artifactId>helper</artifactId>
