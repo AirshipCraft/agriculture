@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- FAWE import
+  - FastAsyncWorldEdit import to be used instead of default WorldEdit
+  - should be a little more optimized 
 - TreeUtils
   - Checks for if block is to be considered natural or if the block is to be growable
     - Growable: i.e. sapling, mushroom, fungus
