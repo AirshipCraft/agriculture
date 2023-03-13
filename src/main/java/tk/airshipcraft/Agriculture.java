@@ -31,7 +31,7 @@ public final class Agriculture extends JavaPlugin {
                 return;
             }
         }
-        File schematicsFolder = new File(folder, "schematics");
+        File schematicsFolder = new File(folder, "/schematics");
         if (!schematicsFolder.exists()) {
             getLogger().severe("Unable to find schematics folder.");
             Bukkit.getPluginManager().disablePlugin(this);
@@ -73,7 +73,7 @@ public final class Agriculture extends JavaPlugin {
      * Load trees from data
      */
     private void loadTrees() {
-        File biomeFolder = new File(getDataFolder(), "biomes");
+        File biomeFolder = new File(getDataFolder(), "/biomes");
         if (!biomeFolder.exists()) {
             getLogger().severe("Unable to find biomes folder");
             Bukkit.getPluginManager().disablePlugin(this);

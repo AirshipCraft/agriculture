@@ -73,5 +73,11 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="Maven: me.lucko:helper:x.y.z" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: me.lucko:helper-sql:x.y.z" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: me.lucko:helper-redis:x.y.z" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: me.lucko:helper-mongo:x.y.z" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: me.lucko:helper-lilypad:x.y.z" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: me.lucko:helper-profiles:x.y.z" level="project" />
   </component>
 </module>

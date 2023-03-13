@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>tk</groupId>
-    <artifactId>airshipcraft</artifactId>
+    <groupId>tk.airshipcraft</groupId>
+    <artifactId>agriculture</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -96,6 +96,12 @@
             <version>2.5.3</version>
             <scope>system</scope>
             <systemPath>${basedir}/lib/FastAsyncWorldEdit-2.5.3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>me.lucko</groupId>
+            <artifactId>helper</artifactId>
+            <version>5.6.13</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
