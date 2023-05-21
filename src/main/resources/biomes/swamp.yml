@@ -1,0 +1,16 @@
+biomes:
+  - SWAMP
+  - SWAMP_HILLS
+materials:
+  OAK_SAPLING:
+    oak12:
+      weight: 35
+      y-offset: -3
+    oak9:
+      weight: 50
+      y-offset: -2
+    oak13:
+      weight: 100
+      y-offset: -1
+    oak5:
+      weight: 25
