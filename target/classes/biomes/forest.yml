@@ -1,0 +1,29 @@
+biomes:
+  - FOREST
+  - FLOWER_FOREST
+  - BIRCH_FOREST
+  - TALL_BIRCH_FOREST
+  - BIRCH_FOREST_HILLS
+materials:
+  OAK_SAPLING:
+    oak8:
+      weight: 40
+      y-offset: -3
+    oak10:
+      weight: 60
+      y-offset: -1
+    oak11:
+      weight: 16
+      y-offset: -2
+    oak7:
+      weight: 6
+      y-offset: -3
+    oak6:
+      weight: 26
+      y-offset: -2
+    oak5:
+      weight: 60
+      y-offset: -1
+    oak4:
+      weight: 34
+      y-offset: -2

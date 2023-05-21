@@ -1,0 +1,6 @@
+name: Agriculture
+version: '1.0-SNAPSHOT'
+main: tk.airshipcraft.Agriculture
+api-version: 1.19
+authors: [notzune]
+description: Various plant, animal, and food related changes and additions
