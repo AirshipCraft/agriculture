@@ -1,0 +1,20 @@
+{
+  "name": "agriculture",
+  "version": "1.0.0",
+  "description": "Assortment of custom food and plants",
+  "main": "release.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AirshipCraft/agriculture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AirshipCraft/agriculture/issues"
+  },
+  "homepage": "https://github.com/AirshipCraft/agriculture#readme"
+}
