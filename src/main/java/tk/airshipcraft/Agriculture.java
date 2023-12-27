@@ -4,6 +4,7 @@ import tk.airshipcraft.commonlib.ACRPlugin;
 
 /**
  * Main class.
+ *
  * @author notzune
  * @version 1.0.0
  * @since 2023-03-12
