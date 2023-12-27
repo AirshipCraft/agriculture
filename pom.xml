@@ -53,6 +53,17 @@
         </resources>
     </build>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>airshipcraft-snapshots</id>
+            <url>https://nexus.zuner.xyz/repository/airshipcraft-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>airshipcraft-releases</id>
+            <url>https://nexus.zuner.xyz/repository/airshipcraft-releases/</url>
+        </repository>
+    </distributionManagement>
+
     <repositories>
         <repository>
             <id>papermc-repo</id>
@@ -62,6 +73,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>airshipcraft-releases</id>
+            <url>https://nexus.zuner.xyz/repository/airshipcraft-releases/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -70,6 +85,11 @@
             <artifactId>paper-api</artifactId>
             <version>1.19.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>tk.airshipcraft</groupId>
+            <artifactId>commonlib</artifactId>
+            <version>1.4.12</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>

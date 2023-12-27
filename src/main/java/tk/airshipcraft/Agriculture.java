@@ -1,17 +1,23 @@
 package tk.airshipcraft;
 
-import org.bukkit.plugin.java.JavaPlugin;
+import tk.airshipcraft.commonlib.ACRPlugin;
 
-public final class Agriculture extends JavaPlugin {
+/**
+ * Main class.
+ * @author notzune
+ * @version 1.0.0
+ * @since 2023-03-12
+ */
+public final class Agriculture extends ACRPlugin {
 
     @Override
-    public void onEnable() {
+    public void onPluginEnable() {
         // Plugin startup logic
 
     }
 
     @Override
-    public void onDisable() {
-        // Plugin shutdown logic
+    public void onPluginDisable() {
+
     }
 }
