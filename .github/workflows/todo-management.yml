@@ -1,0 +1,55 @@
+name: TODO Management
+
+on:
+  push:
+    branches:
+      - '**'  # This will trigger the workflow on push to any branch
+  issues:
+    types: [ opened, closed, deleted ]
+
+jobs:
+  manage-todo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history for all branches and tags
+
+      - name: Load Environment Variables
+        run: .github/workflows/scripts/set-env-vars.sh
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9' # This should match the version in your set-env-vars.sh
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "::set-output name=branch::$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
+      - name: Run Todo Manager Script
+        run: python .github/workflows/scripts/todo_manager.py
+        env:
+          GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          JAVA_FILES_DIRECTORY: 'src/' # Ensure this directory is correct and relative to the root of your repository
+          GITHUB_ISSUE_TITLE: ${{ github.event.issue.title }}
+          GITHUB_ISSUE_BODY: ${{ github.event.issue.body }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git fetch
+          git checkout ${{ steps.extract_branch.outputs.branch }}
+          git merge origin/${{ steps.extract_branch.outputs.branch }}
+          git add -A
+          git commit -m "Automated TODO management" || echo "No changes to commit"
+          git push origin ${{ steps.extract_branch.outputs.branch }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
