@@ -9,8 +9,5 @@
         <module name="airshipcraft" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="airshipcraft" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
